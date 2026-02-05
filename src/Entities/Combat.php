@@ -1,8 +1,8 @@
 <?php
 
-namespace Src\Entities;
+namespace App\Entities;
 
-use src\Entities\Flotte;
+use App\Entities\Flotte;
 
 class Combat extends Flotte {
 
@@ -31,7 +31,7 @@ class Combat extends Flotte {
 	public function setMunition($munition) {
 
 		$this->munition = $munition;
-		
+
 	}
 	
 

@@ -1,12 +1,12 @@
 <?php
 
-namespace Src\Entities;
+namespace App\Entities;
 
-use src\Entities\Flotte;
+use App\Entities\Flotte;
 
 Class Transport extends Flotte {
 	
-	private $soute;
+	private $soute = [];
 
 	
 
