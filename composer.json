@@ -1,0 +1,17 @@
+{
+    "name": "arnaud/t-pgroupe_phpunit",
+    "autoload": {
+        "psr-4": {
+            "Arnaud\\TPgroupePhpunit\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "th1nde",
+            "email": "arnaud@monel.fr"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^9.6"
+    }
+}
