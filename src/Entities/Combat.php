@@ -2,42 +2,32 @@
 
 namespace App\Entities;
 
-use App\Entities\Flotte;
-
 class Combat extends Flotte {
 
-	private $armement;
+    private string $armement = "Laser Standard";
+    private int $munitions = 50;
 
-	private $munition;
+    public function getArmement(): string {
+        return $this->armement;
+    }
 
-	public function getArmement(){
+    public function getMunitions(): int {
+        return $this->munitions;
+    }
 
-		return $this->armement;
-		
-	}
+    public function setArmement(string $armement): void {
+        $this->armement = $armement;
+    }
 
-	public function getMunition() {
+    public function setMunitions(int $munitions): void {
+        $this->munitions = $munitions;
+    }
 
-		return $this->armement;
-
-	}
-
-	public function setArmement($armement) {
-
-		$this->armement = $armement;
-
-	}
-
-	public function setMunition($munition) {
-
-		$this->munition = $munition;
-
-	}
-	
-
+    public function tirer(): void {
+        if ($this->munitions > 0) {
+            $this->munitions--;
+        } else {
+            throw new \UnderflowException("Erreur : Munitions épuisées !");
+        }
+    }
 }
-
-
-
-
-?>
