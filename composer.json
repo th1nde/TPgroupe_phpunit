@@ -2,7 +2,7 @@
     "name": "arnaud/t-pgroupe_phpunit",
     "autoload": {
         "psr-4": {
-            "Arnaud\\TPgroupePhpunit\\": "src/"
+            "App\\": "src/"
         }
     },
     "authors": [
