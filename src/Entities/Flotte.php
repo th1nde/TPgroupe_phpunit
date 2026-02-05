@@ -4,10 +4,10 @@ namespace src\Entities;
 
 class Flotte {
 
-	private $nom;
-	private $energie;
+	protected $nom;
+	protected $energie;
 
-	private $etat;
+	protected $etat;
 
 
 	public function getNom(){
